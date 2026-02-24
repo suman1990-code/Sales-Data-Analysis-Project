@@ -8,20 +8,25 @@ print(df.head())
 
 # 1. Total Sales
 
-print(df["Total_Sales"].sum())
+total_sales = df["Total_Sales"].sum()
+print("Total Sales is :", total_sales)
 
 # 2. Top Product
 
-print(df["Product"].value_counts())
+top_product = df["Product"].value_counts()
+print("Top Product will be:",top_product)
 
-# 3. Sales by City
+# 3. max_Sales by City
 
-print(df.groupby("City")["Total_Sales"].sum())
+max_sales by city = df.groupby("City")["Total_Sales"].sum()
+print("The city wise max sale:",max_sales by city)
 
 # 4. Highest Sales
 
-print(df.sort_values("Total_Sales",ascending=False))
+highest_sale = df.sort_values("Total_Sales",ascending=False)
+print("Highest sale is", highest_sale)
 
 # 5. Average Sales
 
-print(df["Total_Sales"].mean())
+average_sale = df["Total_Sales"].mean()
+print("Average Sale is :")
