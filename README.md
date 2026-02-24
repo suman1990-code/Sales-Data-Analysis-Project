@@ -5,6 +5,7 @@ This project analyzes sales data using Python,pandas.
 ## Tools Used
 - Python
 - Pandas
+- csv file
 ## Analysis
 
 1. Total Sales Calculation
